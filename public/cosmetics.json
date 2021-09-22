@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "nail polish",
+        "price": 325
+    },
+    {
+        "id": 2,
+        "name": "mehedi",
+        "price": 29
+    },
+    {
+        "id": 3,
+        "name": "cream",
+        "price": 180
+    },
+    {
+        "id": 4,
+        "name": "mascara",
+        "price": 93
+    },
+    {
+        "id": 5,
+        "name": "vure pen",
+        "price": 234
+    }
+]
