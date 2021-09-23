@@ -1,5 +1,5 @@
 import React from 'react';
-import { addDb } from '../Utilities/fakedb';
+import { addDb, removeFromDb } from '../Utilities/fakedb';
 
 const Cosmetic = (props) => {
     const { name, price, id } = props.product;
@@ -8,11 +8,16 @@ const Cosmetic = (props) => {
         console.log(id);
         addDb(id);
     }
+    const handleCancelOrder = id => {
+        // set to local storage
+        removeFromDb(id);
+    }
     return (
         <div>
             <h3>Name: {name}</h3>
             <h4>Price: {price}</h4>
             <button onClick={() => handleBuyNow(id)}>Buy Now</button>
+            <button onClick={() => handleCancelOrder(id)}>Cancel Order</button>
         </div>
     );
 };
