@@ -28,4 +28,5 @@ for (const item of items) {
 }
 const itemReducer = (previous, current) => previous + current;
 const itemTotal = items.reduce(itemReducer, 0)
+console.log(itemTotal);
 export { add, multiply }
