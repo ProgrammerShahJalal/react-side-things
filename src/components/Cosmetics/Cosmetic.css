@@ -1,0 +1,48 @@
+.item{
+    margin: 10px;
+    padding: 25px 0px;
+    border: 2px solid blue;
+}
+/* buy button style */
+#buy-btn {background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%)}
+#buy-btn {
+   margin: 10px;
+   padding: 15px 35px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 10px;
+   outline: none;
+   border:none;
+   cursor: pointer;
+ }
+
+ #buy-btn:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+/* cancel order button */
+
+#cancel-order-btn {background-image: linear-gradient(to right, #ee0979 0%, #ff6a00  51%, #ee0979  100%)}
+#cancel-order-btn {
+   margin: 10px;
+   padding: 15px 35px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 10px;
+outline: none;
+border: none;
+cursor: pointer;
+ }
+
+ #cancel-order-btn:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }

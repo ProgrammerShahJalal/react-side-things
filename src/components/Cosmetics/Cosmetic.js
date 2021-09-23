@@ -1,4 +1,5 @@
 import React from 'react';
+import './Cosmetic.css'
 import { addDb, removeFromDb } from '../Utilities/fakedb';
 
 const Cosmetic = (props) => {
@@ -13,11 +14,11 @@ const Cosmetic = (props) => {
         removeFromDb(id);
     }
     return (
-        <div>
+        <div className='item'>
             <h3>Name: {name}</h3>
             <h4>Price: {price}</h4>
-            <button onClick={() => handleBuyNow(id)}>Buy Now</button>
-            <button onClick={() => handleCancelOrder(id)}>Cancel Order</button>
+            <button id="buy-btn" onClick={() => handleBuyNow(id)}>Buy Now</button>
+            <button id="cancel-order-btn" onClick={() => handleCancelOrder(id)}>Cancel</button>
         </div>
     );
 };

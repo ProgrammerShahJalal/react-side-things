@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Cosmetic from './Cosmetic';
+import './Cosmetics.css'
 // import { add, multiply } from '../Utilities/Storage';
 
 const Cosmetics = () => {
@@ -17,14 +18,16 @@ const Cosmetics = () => {
     return (
         <div>
             <h1>Shop my cosmetics!</h1>
-            {
-                products.map(product => <Cosmetic
-                    key={product.id}
-                    product={product}
-                    name={product.name}
-                    price={product.price}
-                ></Cosmetic>)
-            }
+            <div className="container">
+                {
+                    products.map(product => <Cosmetic
+                        key={product.id}
+                        product={product}
+                        name={product.name}
+                        price={product.price}
+                    ></Cosmetic>)
+                }
+            </div>
             {/* {
                 console.log(sum, multi)
             } */}
